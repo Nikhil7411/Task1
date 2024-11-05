@@ -1,0 +1,128 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: #acacb9;
+    padding: 20px;
+}
+
+.resume {
+    display: flex;
+    width: 1000px;
+    background-color: #f8f3f3;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #13202f;
+    color: rgb(250, 250, 250);
+    padding: 20px;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #0a0101;
+}
+
+.section-title {
+    font-size: 18px;
+    color: #1f3c5d;
+    margin: 20px 0 10px;
+    font-weight: bold;
+}
+
+.sidebar h1, .sidebar h2 {
+    color: white;
+}
+
+.contact-info, .education, .skills, .languages {
+    margin-bottom: 60px;
+}
+
+.contact-info p, .education p, .skills p, .languages p {
+    margin-bottom: 5px;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.main p {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.work-experience-item, .reference-item {
+    margin-bottom: 20px;
+}
+
+.work-experience-item h3, .reference-item h3 {
+    font-size: 16px;
+    color: #05172c;
+    margin-bottom: 5px;
+}
+
+.work-experience-item h4 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #555;
+}
+
+.work-experience-item ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+.work-experience-item ul li {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/*for shadow trans*/
+.work-experience-item, .reference-item {
+    margin-bottom: 20px;
+    transition: box-shadow 0.7s ease; 
+}
+
+.work-experience-item:hover, .reference-item:hover {
+    box-shadow: 0 8px 16px rgba(172, 3, 3, 0.2); 
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .resume {
+        flex-direction: column; 
+    }
+}
